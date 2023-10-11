@@ -9,7 +9,7 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body class="bg-dark">
@@ -30,6 +30,31 @@
     </div>
   </main>
 
+  <!-- Offcanvas para mostrar detalles de la película -->
+  <div id="detallePelicula" class="offcanvas offcanvas-top" tabindex="-1">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="detalleTitulo"></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p id="detalleOverview"></p>
+      <hr>
+      <ul id="detalleGenres" class="list-group d-flex mr-3">
+      </ul>
+    </div>
+    <div class="dropdown mt-3 float-right align-self-end">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        More
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" id="añoSalida" href="#"></a></li>
+        <li><a class="dropdown-item" id="duracion" href="#"></a></li>
+        <li><a class="dropdown-item" id="costeProduccion" href="#"></a></li>
+        <li><a class="dropdown-item" id="ganancias" href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+
   <footer class="text-muted py-3">
     <div class="container">
       <p class="float-end mb-1">
@@ -44,5 +69,4 @@
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/index.js"></script>
 </body>
-
 </html>
