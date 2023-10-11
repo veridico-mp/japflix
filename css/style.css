@@ -26,3 +26,12 @@ main {
 .offcanvas-top{
     height: fit-content;
 }
+.genero{/*Etiquetas de genero*/
+    max-width: fit-content;
+    text-align: center;
+    margin: 0.1%;
+    padding: 0.35%;
+    border-radius: 4%;
+    font-weight: bold;
+    background-color: #ffc107;
+}/*cierre de genero*/

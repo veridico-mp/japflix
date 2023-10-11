@@ -78,17 +78,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
       detalleTitulo.textContent = pelicula.title;
       detalleOverview.textContent = pelicula.overview;
-      añoSalida.textContent = `Año de salida: ${new Date(pelicula.release_date).getFullYear()}`; // Extraer el año
-      duracion.textContent = `Duración: ${pelicula.runtime} minutos`;
-      costeProduccion.textContent = `Coste de producción: $${pelicula.budget}`;
-      ganancias.textContent = `Ganancias: $${pelicula.revenue}`;
+      añoSalida.textContent = `Release year: ${new Date(pelicula.release_date).getFullYear()}`; // Año de estreno
+      duracion.textContent = `Duration: ${pelicula.runtime} minutos`;//Duració
+      costeProduccion.textContent = `Cost of production: $${pelicula.budget}`;//Coste de producción
+      ganancias.textContent = `Profits: $${pelicula.revenue}`;//Ganancias
     
       detalleGenres.innerHTML = '';
     
       
       pelicula.genres.forEach(genre => {
         const genreItem = document.createElement('li');
-        genreItem.textContent = genre.name; 
+        genreItem.textContent = genre.name;
+        genreItem.className += "genero"
         detalleGenres.appendChild(genreItem);
       });
     
